@@ -1,0 +1,6 @@
+framework module Pods_Hang_Mobile {
+  umbrella header "Pods-Hang Mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44025661279C1FE30068EA93 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565C279C1FE20068EA93 /* Quicksand-Regular.ttf */; };
+		44025662279C1FE30068EA93 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565D279C1FE20068EA93 /* Quicksand-Light.ttf */; };
+		44025663279C1FE30068EA93 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565E279C1FE30068EA93 /* Quicksand-Medium.ttf */; };
+		44025664279C1FE30068EA93 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565F279C1FE30068EA93 /* Quicksand-SemiBold.ttf */; };
+		44025665279C1FE30068EA93 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44025660279C1FE30068EA93 /* Quicksand-Bold.ttf */; };
 		447ACE852790757D0073A932 /* Hang_MobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE842790757D0073A932 /* Hang_MobileApp.swift */; };
 		447ACE872790757D0073A932 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE862790757D0073A932 /* ContentView.swift */; };
 		447ACE892790757F0073A932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447ACE882790757F0073A932 /* Assets.xcassets */; };
 		447ACE8C2790757F0073A932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447ACE8B2790757F0073A932 /* Preview Assets.xcassets */; };
+		447ACE94279078440073A932 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE93279078440073A932 /* RadioPlayer.swift */; };
+		4489327B279C1D4300E0FE13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489327A279C1D4300E0FE13 /* Colors.swift */; };
+		48E9DDCF1E4AE94D14ADB278 /* Pods_Hang_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E81CD5DF30B4FFD1F13684B /* Pods_Hang_Mobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E81CD5DF30B4FFD1F13684B /* Pods_Hang_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hang_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4402565C279C1FE20068EA93 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		4402565D279C1FE20068EA93 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		4402565E279C1FE30068EA93 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		4402565F279C1FE30068EA93 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		44025660279C1FE30068EA93 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
 		447ACE812790757D0073A932 /* Hang Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hang Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447ACE842790757D0073A932 /* Hang_MobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hang_MobileApp.swift; sourceTree = "<group>"; };
 		447ACE862790757D0073A932 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		447ACE882790757F0073A932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		447ACE8B2790757F0073A932 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		447ACE93279078440073A932 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		447ACE9527907D6F0073A932 /* Hang-Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hang-Mobile-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4489327A279C1D4300E0FE13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7A40BC93B0EFF86CA0900E47 /* Pods-Hang Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang Mobile.release.xcconfig"; path = "Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		B8874B9C38D06ADC945A9141 /* Pods-Hang Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang Mobile.debug.xcconfig"; path = "Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +45,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E9DDCF1E4AE94D14ADB278 /* Pods_Hang_Mobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4402565B279C1F9E0068EA93 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				44025660279C1FE30068EA93 /* Quicksand-Bold.ttf */,
+				4402565D279C1FE20068EA93 /* Quicksand-Light.ttf */,
+				4402565E279C1FE30068EA93 /* Quicksand-Medium.ttf */,
+				4402565C279C1FE20068EA93 /* Quicksand-Regular.ttf */,
+				4402565F279C1FE30068EA93 /* Quicksand-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		447ACE782790757D0073A932 = {
 			isa = PBXGroup;
 			children = (
 				447ACE832790757D0073A932 /* Hang Mobile */,
 				447ACE822790757D0073A932 /* Products */,
+				D37465842824577121B2B2B9 /* Pods */,
+				E26FB0557671D7D01EE91707 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +85,10 @@
 		447ACE832790757D0073A932 /* Hang Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				4402565B279C1F9E0068EA93 /* Fonts */,
+				44893279279C1D3000E0FE13 /* Model */,
+				447ACE922790781B0073A932 /* ViewModel */,
+				447ACE9527907D6F0073A932 /* Hang-Mobile-Info.plist */,
 				447ACE842790757D0073A932 /* Hang_MobileApp.swift */,
 				447ACE862790757D0073A932 /* ContentView.swift */,
 				447ACE882790757F0073A932 /* Assets.xcassets */,
@@ -67,6 +105,40 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		447ACE922790781B0073A932 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				447ACE93279078440073A932 /* RadioPlayer.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		44893279279C1D3000E0FE13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4489327A279C1D4300E0FE13 /* Colors.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D37465842824577121B2B2B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8874B9C38D06ADC945A9141 /* Pods-Hang Mobile.debug.xcconfig */,
+				7A40BC93B0EFF86CA0900E47 /* Pods-Hang Mobile.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E26FB0557671D7D01EE91707 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E81CD5DF30B4FFD1F13684B /* Pods_Hang_Mobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 447ACE8F2790757F0073A932 /* Build configuration list for PBXNativeTarget "Hang Mobile" */;
 			buildPhases = (
+				9FF2CAF7A843FBA476BAC9E2 /* [CP] Check Pods Manifest.lock */,
 				447ACE7D2790757D0073A932 /* Sources */,
 				447ACE7E2790757D0073A932 /* Frameworks */,
 				447ACE7F2790757D0073A932 /* Resources */,
+				D1E8B8BBB9E74DAF6E7D7255 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,18 +199,67 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44025665279C1FE30068EA93 /* Quicksand-Bold.ttf in Resources */,
 				447ACE8C2790757F0073A932 /* Preview Assets.xcassets in Resources */,
+				44025661279C1FE30068EA93 /* Quicksand-Regular.ttf in Resources */,
 				447ACE892790757F0073A932 /* Assets.xcassets in Resources */,
+				44025664279C1FE30068EA93 /* Quicksand-SemiBold.ttf in Resources */,
+				44025662279C1FE30068EA93 /* Quicksand-Light.ttf in Resources */,
+				44025663279C1FE30068EA93 /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FF2CAF7A843FBA476BAC9E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hang Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E8B8BBB9E74DAF6E7D7255 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		447ACE7D2790757D0073A932 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				447ACE94279078440073A932 /* RadioPlayer.swift in Sources */,
+				4489327B279C1D4300E0FE13 /* Colors.swift in Sources */,
 				447ACE872790757D0073A932 /* ContentView.swift in Sources */,
 				447ACE852790757D0073A932 /* Hang_MobileApp.swift in Sources */,
 			);
@@ -263,15 +386,18 @@
 		};
 		447ACE902790757F0073A932 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8874B9C38D06ADC945A9141 /* Pods-Hang Mobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
 				DEVELOPMENT_TEAM = HAAFQ8F93S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hang-Mobile-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -292,15 +418,18 @@
 		};
 		447ACE912790757F0073A932 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A40BC93B0EFF86CA0900E47 /* Pods-Hang Mobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
 				DEVELOPMENT_TEAM = HAAFQ8F93S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hang-Mobile-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
