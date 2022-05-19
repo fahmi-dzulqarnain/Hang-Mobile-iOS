@@ -68,9 +68,9 @@
 		88B9326A6461835FC0DFBD8B1E94F709 /* Madhab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Madhab.swift; path = Sources/Models/Madhab.swift; sourceTree = "<group>"; };
 		8E251CAACFD2D17DB7732A4517B0F42F /* Coordinates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coordinates.swift; path = Sources/Models/Coordinates.swift; sourceTree = "<group>"; };
 		9A1661047D9F96FB891BB1FE4653A76D /* Pods-Hang Mobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hang Mobile.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A34D26B47049BC1741A10684FB097FFE /* Adhan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Adhan.debug.xcconfig; sourceTree = "<group>"; };
-		AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Adhan; path = Adhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Adhan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB8EFC60F8BC435B2CD044599918AF6 /* DateUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateUtilities.swift; path = Sources/Extensions/DateUtilities.swift; sourceTree = "<group>"; };
 		BD111B6DF075283FA320DE2D39E8720D /* Pods-Hang Mobile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hang Mobile-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C4042DB594E236FE73BF00014CA4FA50 /* PrayerAdjustment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrayerAdjustment.swift; path = Sources/Models/PrayerAdjustment.swift; sourceTree = "<group>"; };
@@ -136,7 +136,6 @@
 				574210400A94EB6600AC05C735DBE14F /* SunnahTimes.swift */,
 				C0B86453283E43262FA91AE11B9F2175 /* Support Files */,
 			);
-			name = Adhan;
 			path = Adhan;
 			sourceTree = "<group>";
 		};
@@ -159,7 +158,7 @@
 		9EC959796E7B15D3B95D394A384D36B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan */,
+				AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */,
 				F426CDFF6049E4B3A5B3D685B4D2F221 /* Pods-Hang Mobile */,
 			);
 			name = Products;
@@ -281,7 +280,7 @@
 			);
 			name = Adhan;
 			productName = Adhan;
-			productReference = AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan */;
+			productReference = AF0A8C5F6ECD4F09C906608F0027BADD /* Adhan.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +290,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1330;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -393,7 +392,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Adhan/Adhan-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Adhan/Adhan-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,7 +629,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Adhan/Adhan-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Adhan/Adhan-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

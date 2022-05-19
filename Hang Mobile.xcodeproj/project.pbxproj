@@ -12,12 +12,21 @@
 		44025663279C1FE30068EA93 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565E279C1FE30068EA93 /* Quicksand-Medium.ttf */; };
 		44025664279C1FE30068EA93 /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4402565F279C1FE30068EA93 /* Quicksand-SemiBold.ttf */; };
 		44025665279C1FE30068EA93 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44025660279C1FE30068EA93 /* Quicksand-Bold.ttf */; };
+		444D9BB3281CADE6003B73DE /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D9BB2281CADE6003B73DE /* RadioView.swift */; };
+		444D9BB7281CB030003B73DE /* PrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D9BB6281CB030003B73DE /* PrayView.swift */; };
 		447ACE852790757D0073A932 /* Hang_MobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE842790757D0073A932 /* Hang_MobileApp.swift */; };
 		447ACE872790757D0073A932 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE862790757D0073A932 /* ContentView.swift */; };
 		447ACE892790757F0073A932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447ACE882790757F0073A932 /* Assets.xcassets */; };
 		447ACE8C2790757F0073A932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447ACE8B2790757F0073A932 /* Preview Assets.xcassets */; };
 		447ACE94279078440073A932 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447ACE93279078440073A932 /* RadioPlayer.swift */; };
 		4489327B279C1D4300E0FE13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489327A279C1D4300E0FE13 /* Colors.swift */; };
+		449B7F2E27ED605A00CF1D49 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7F2D27ED605A00CF1D49 /* PrayTime.swift */; };
+		449B7F3127ED683900CF1D49 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7F3027ED683900CF1D49 /* LocationManager.swift */; };
+		44C2D85D2826404100B39931 /* UpcomingPrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2D85C2826404100B39931 /* UpcomingPrayView.swift */; };
+		44FF7638281CD06800379478 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF7637281CD06800379478 /* String+Ext.swift */; };
+		44FF763A281CD84000379478 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF7639281CD84000379478 /* Image+Ext.swift */; };
+		44FF763C281CF4C300379478 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF763B281CF4C300379478 /* Date+Ext.swift */; };
+		44FF7640281D09E100379478 /* PrayNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF763F281D09E100379478 /* PrayNotification.swift */; };
 		48E9DDCF1E4AE94D14ADB278 /* Pods_Hang_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E81CD5DF30B4FFD1F13684B /* Pods_Hang_Mobile.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +37,8 @@
 		4402565E279C1FE30068EA93 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		4402565F279C1FE30068EA93 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		44025660279C1FE30068EA93 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		444D9BB2281CADE6003B73DE /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
+		444D9BB6281CB030003B73DE /* PrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayView.swift; sourceTree = "<group>"; };
 		447ACE812790757D0073A932 /* Hang Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hang Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447ACE842790757D0073A932 /* Hang_MobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hang_MobileApp.swift; sourceTree = "<group>"; };
 		447ACE862790757D0073A932 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +47,13 @@
 		447ACE93279078440073A932 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 		447ACE9527907D6F0073A932 /* Hang-Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Hang-Mobile-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4489327A279C1D4300E0FE13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		449B7F2D27ED605A00CF1D49 /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
+		449B7F3027ED683900CF1D49 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		44C2D85C2826404100B39931 /* UpcomingPrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingPrayView.swift; sourceTree = "<group>"; };
+		44FF7637281CD06800379478 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		44FF7639281CD84000379478 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+		44FF763B281CF4C300379478 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		44FF763F281D09E100379478 /* PrayNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayNotification.swift; sourceTree = "<group>"; };
 		7A40BC93B0EFF86CA0900E47 /* Pods-Hang Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang Mobile.release.xcconfig"; path = "Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile.release.xcconfig"; sourceTree = "<group>"; };
 		B8874B9C38D06ADC945A9141 /* Pods-Hang Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hang Mobile.debug.xcconfig"; path = "Target Support Files/Pods-Hang Mobile/Pods-Hang Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +82,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		444D9BB1281CADB3003B73DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				444D9BB2281CADE6003B73DE /* RadioView.swift */,
+				444D9BB6281CB030003B73DE /* PrayView.swift */,
+				44C2D85C2826404100B39931 /* UpcomingPrayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		447ACE782790757D0073A932 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,8 @@
 		447ACE832790757D0073A932 /* Hang Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				444D9BB1281CADB3003B73DE /* Views */,
+				449B7F2F27ED682200CF1D49 /* Helper */,
 				4402565B279C1F9E0068EA93 /* Fonts */,
 				44893279279C1D3000E0FE13 /* Model */,
 				447ACE922790781B0073A932 /* ViewModel */,
@@ -109,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				447ACE93279078440073A932 /* RadioPlayer.swift */,
+				449B7F2D27ED605A00CF1D49 /* PrayTime.swift */,
+				44FF763F281D09E100379478 /* PrayNotification.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -121,13 +153,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		449B7F2F27ED682200CF1D49 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				449B7F3027ED683900CF1D49 /* LocationManager.swift */,
+				44FF7637281CD06800379478 /* String+Ext.swift */,
+				44FF7639281CD84000379478 /* Image+Ext.swift */,
+				44FF763B281CF4C300379478 /* Date+Ext.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		D37465842824577121B2B2B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				B8874B9C38D06ADC945A9141 /* Pods-Hang Mobile.debug.xcconfig */,
 				7A40BC93B0EFF86CA0900E47 /* Pods-Hang Mobile.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,8 +301,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				447ACE94279078440073A932 /* RadioPlayer.swift in Sources */,
+				444D9BB3281CADE6003B73DE /* RadioView.swift in Sources */,
 				4489327B279C1D4300E0FE13 /* Colors.swift in Sources */,
+				449B7F3127ED683900CF1D49 /* LocationManager.swift in Sources */,
 				447ACE872790757D0073A932 /* ContentView.swift in Sources */,
+				44FF7640281D09E100379478 /* PrayNotification.swift in Sources */,
+				449B7F2E27ED605A00CF1D49 /* PrayTime.swift in Sources */,
+				44FF763C281CF4C300379478 /* Date+Ext.swift in Sources */,
+				44C2D85D2826404100B39931 /* UpcomingPrayView.swift in Sources */,
+				444D9BB7281CB030003B73DE /* PrayView.swift in Sources */,
+				44FF7638281CD06800379478 /* String+Ext.swift in Sources */,
+				44FF763A281CD84000379478 /* Image+Ext.swift in Sources */,
 				447ACE852790757D0073A932 /* Hang_MobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,24 +443,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
-				DEVELOPMENT_TEAM = HAAFQ8F93S;
+				DEVELOPMENT_TEAM = 8FGBQ573Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hang-Mobile-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hang Mobile needs your location to calculate Pray Time";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.midcores.Hang-Mobile";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.midcores.HangMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,24 +478,27 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
-				DEVELOPMENT_TEAM = HAAFQ8F93S;
+				DEVELOPMENT_TEAM = 8FGBQ573Q7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Hang-Mobile-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Hang Mobile needs your location to calculate Pray Time";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.midcores.Hang-Mobile";
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.midcores.HangMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
