@@ -14,10 +14,19 @@ struct UpcomingPrayView: View {
     @State var upcomingPray = ""
     @State var upcomingTime = Date()
     @State var postfixText = " remaining"
+    @StateObject var locationManager = LocationManager()
+        
+    @State var userLatitude: Double = 0.0
+    @State var userLongitude: Double = 0.0
+    
+    var updatedPray: PrayTime {
+        return PrayTime(userLatitude, userLongitude)
+    }
     
     var body: some View {
         ZStack {
-            let pray = Pray(prayName: upcomingPray, prayTime: upcomingTime)
+            let pray = Pray(prayName: updatedPray.upcomingPrayName,
+                            prayTime: updatedPray.upcomingPrayTime)
             let _ = notification.showNotification(pray: pray)
 
             Image(upcomingPray)
@@ -55,9 +64,10 @@ struct UpcomingPrayView: View {
             }
             .onChange(of: scenePhase) { newPhase in
                 if newPhase == .active {
-                    print("Active")
+                    userLatitude = locationManager.lastLocation?.coordinate.latitude ?? 0
+                    userLongitude = locationManager.lastLocation?.coordinate.longitude ?? 0
                     
-                    let updatedPray = PrayTime()
+                    let updatedPray = PrayTime(userLatitude, userLongitude)
                     postfixText = updatedPray.isDisplayNext ? " remaining" : " ago"
                     upcomingTime = updatedPray.upcomingPrayTime
                     upcomingPray = updatedPray.upcomingPrayName
@@ -65,7 +75,10 @@ struct UpcomingPrayView: View {
             }
         }
         .onAppear() {
-            let updatedPray = PrayTime()
+            userLatitude = locationManager.lastLocation?.coordinate.latitude ?? 0
+            userLongitude = locationManager.lastLocation?.coordinate.longitude ?? 0
+            
+            let updatedPray = PrayTime(userLatitude, userLongitude)
             postfixText = updatedPray.isDisplayNext ? " remaining" : " ago"
             upcomingTime = updatedPray.upcomingPrayTime
             upcomingPray = updatedPray.upcomingPrayName

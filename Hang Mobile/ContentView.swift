@@ -11,7 +11,6 @@ import MediaPlayer
 
 struct ContentView: View {
     @StateObject private var radioPlayer = RadioPlayer()
-    @StateObject private var prayTime = PrayTime()
     
     let iconSize: CGFloat = 71.0
     
@@ -20,7 +19,7 @@ struct ContentView: View {
     @State var screenWidth = 0
     
     private let tabImages = ["tab-radio", "tab-video", "tab-shalat"]
-    private let streamPlayer = AVPlayer(url: URL(string: "https://61745e0b4c6ed.streamlock.net:443/regular/myStream/playlist.m3u8")!)
+    private let streamPlayer = AVPlayer(url: URL(string: "https://hangmedia.co.id/videoPlayer")!)
     
     var body: some View {
         VStack {

@@ -22,6 +22,7 @@
 		4489327B279C1D4300E0FE13 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489327A279C1D4300E0FE13 /* Colors.swift */; };
 		449B7F2E27ED605A00CF1D49 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7F2D27ED605A00CF1D49 /* PrayTime.swift */; };
 		449B7F3127ED683900CF1D49 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B7F3027ED683900CF1D49 /* LocationManager.swift */; };
+		44B13136283F0FCD002E90B4 /* Pray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B13135283F0FCD002E90B4 /* Pray.swift */; };
 		44C2D85D2826404100B39931 /* UpcomingPrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2D85C2826404100B39931 /* UpcomingPrayView.swift */; };
 		44FF7638281CD06800379478 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF7637281CD06800379478 /* String+Ext.swift */; };
 		44FF763A281CD84000379478 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF7639281CD84000379478 /* Image+Ext.swift */; };
@@ -49,6 +50,7 @@
 		4489327A279C1D4300E0FE13 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		449B7F2D27ED605A00CF1D49 /* PrayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
 		449B7F3027ED683900CF1D49 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		44B13135283F0FCD002E90B4 /* Pray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pray.swift; sourceTree = "<group>"; };
 		44C2D85C2826404100B39931 /* UpcomingPrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingPrayView.swift; sourceTree = "<group>"; };
 		44FF7637281CD06800379478 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		44FF7639281CD84000379478 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				4489327A279C1D4300E0FE13 /* Colors.swift */,
+				44B13135283F0FCD002E90B4 /* Pray.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				449B7F2E27ED605A00CF1D49 /* PrayTime.swift in Sources */,
 				44FF763C281CF4C300379478 /* Date+Ext.swift in Sources */,
 				44C2D85D2826404100B39931 /* UpcomingPrayView.swift in Sources */,
+				44B13136283F0FCD002E90B4 /* Pray.swift in Sources */,
 				444D9BB7281CB030003B73DE /* PrayView.swift in Sources */,
 				44FF7638281CD06800379478 /* String+Ext.swift in Sources */,
 				44FF763A281CD84000379478 /* Image+Ext.swift in Sources */,
@@ -443,7 +447,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FGBQ573Q7;
 				ENABLE_PREVIEWS = YES;
@@ -460,13 +464,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.midcores.HangMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -478,7 +482,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Hang Mobile/Hang Mobile.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Hang Mobile/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FGBQ573Q7;
 				ENABLE_PREVIEWS = YES;
@@ -495,13 +499,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.midcores.HangMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};

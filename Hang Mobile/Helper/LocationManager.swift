@@ -8,9 +8,9 @@
 import Foundation
 import CoreLocation
 import Combine
+import MapKit
 
 class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
-
     private let locationManager = CLLocationManager()
     @Published var locationStatus: CLAuthorizationStatus?
     @Published var lastLocation: CLLocation?
@@ -18,7 +18,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     override init() {
         super.init()
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
@@ -40,11 +40,28 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         locationStatus = status
-        print(#function, statusString)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
+        guard let location = locations.last else {
+            return
+        }
         lastLocation = location
+    }
+}
+
+extension CLPlacemark {
+    var streetName: String? { thoroughfare }
+    var streetNumber: String? { subThoroughfare }
+    var city: String? { locality }
+    var neighborhood: String? { subLocality }
+    var state: String? { administrativeArea }
+    var county: String? { subAdministrativeArea }
+    var zipCode: String? { postalCode }
+}
+
+extension CLLocation {
+    func placemark(completion: @escaping (_ placemark: CLPlacemark?, _ error: Error?) -> ()) {
+        CLGeocoder().reverseGeocodeLocation(self) { completion($0?.first, $1) }
     }
 }

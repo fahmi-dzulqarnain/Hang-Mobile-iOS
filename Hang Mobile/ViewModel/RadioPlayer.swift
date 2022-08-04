@@ -23,7 +23,7 @@ class RadioPlayer: ObservableObject {
     }
     
     func playRadio(){
-        if let link = URL(string: "http://46.235.224.203:8000/listen.mp3"){
+        if let link = URL(string: "https://hangmedia.co.id/radio-player"){
             self.audioPlayer = AVPlayer(url: link)
             
             self.audioPlayer?.play()

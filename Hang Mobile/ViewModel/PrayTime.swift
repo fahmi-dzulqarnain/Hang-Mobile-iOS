@@ -12,29 +12,42 @@ class PrayTime: ObservableObject {
     @Published var upcomingPrayName = ""
     @Published var upcomingPrayTime = Date()
     @Published var isDisplayNext = false
-    var locationManager = LocationManager()
     
     let cal = Calendar(identifier: Calendar.Identifier.gregorian)
     private var dateComponents: DateComponents?
     private var coordinates: Coordinates?
+    private var userLatitude: Double?
+    private var userLongitude: Double?
     private var calculationParams: CalculationParameters?
     
-    init() {
-        setupPrayTime()
+    init(_ latitude: Double?, _ longitude: Double?, _ date: Date = Date()) {
+        if (latitude != 0) {
+            userLatitude = latitude
+            userLongitude = longitude
+            
+            UserDefaults.standard.set([userLatitude, userLongitude], forKey: "coordinate")
+        } else {
+            if let location = UserDefaults.standard.object(forKey: "coordinate") as? [Double] {
+                userLatitude = location[0]
+                userLongitude = location[1]
+            }
+        }
+        
+        setupPrayTime(userLatitude, userLongitude, date)
     }
 }
 
 extension PrayTime {
-    private func setupPrayTime() {
-        let location = locationManager.lastLocation?.coordinate
+    private func setupPrayTime(_ latitude: Double?, _ longitude: Double?, _ date: Date) {
         coordinates = Coordinates(
-            latitude: location?.latitude ?? 1.102960,
-            longitude: location?.longitude ?? 104.060810)
-        dateComponents = cal.dateComponents([.year, .month, .day], from: Date())
+            latitude: latitude ?? 1.102960,
+            longitude: longitude ?? 104.060810)
+        dateComponents = cal.dateComponents([.year, .month, .day], from: date)
         calculationParams = CalculationMethod.egyptian.params
         calculationParams?.madhab = .shafi
-        
-        if let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents!, calculationParameters: calculationParams!) {
+
+        if let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents!, calculationParameters: calculationParams!),
+           userLatitude != 0  {
             let currentPray = getCurrentPray()
             isDisplayNext = true
             
@@ -53,8 +66,10 @@ extension PrayTime {
     }
     
     public func getCurrentPray() -> Pray? {
-        if let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents!, calculationParameters: calculationParams!) {
-            let currentPrayer = prayer.currentPrayer()!
+        let dateComponents = cal.dateComponents([.year, .month, .day], from: Date())
+        if userLatitude != 0, coordinates != nil,
+           let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents, calculationParameters: calculationParams!) {
+            let currentPrayer = prayer.currentPrayer() ?? .fajr
             return Pray(prayName: getPrayName(prayer: currentPrayer), prayTime: prayer.time(for: currentPrayer).addMinute(2))
         }
         return nil
@@ -64,7 +79,8 @@ extension PrayTime {
         var prays: [Pray] = []
         dateComponents = cal.dateComponents([.year, .month, .day], from: date)
         
-        if let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents!, calculationParameters: calculationParams!) {
+        if coordinates != nil,
+           let prayer = PrayerTimes(coordinates: coordinates!, date: dateComponents!, calculationParameters: calculationParams!) {
             let shubuh = Pray(prayName: "Shubuh", prayTime: prayer.fajr.addMinute(2))
             let sunrise = Pray(prayName: "Sunrise", prayTime: prayer.sunrise)
             let dzuhur = Pray(prayName: "Dzuhur", prayTime: prayer.dhuhr.addMinute(2))
@@ -97,10 +113,4 @@ extension PrayTime {
         
         return result
     }
-}
-
-struct Pray {
-    var prayID = UUID()
-    var prayName = ""
-    var prayTime = Date()
 }
